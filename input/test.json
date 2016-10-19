@@ -1,0 +1,1833 @@
+{
+   "swagger":"2.0",
+   "info":{
+      "version":"v1",
+      "title":"Git4u.Common.Web",
+      "vendorExtensions":{
+
+      }
+   },
+   "host":"localhost:2650",
+   "schemes":[
+      "http"
+   ],
+   "paths":{
+      "/api/Common/GetAllCountry":{
+         "post":{
+            "tags":[
+               "Common"
+            ],
+            "summary":"取得所有國家",
+            "operationId":"Common_GetAllCountry",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"getAllCountryRequests",
+                  "in":"body",
+                  "description":"",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/GetAllCountryRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/GetAllCountryResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/VerifyIdentifyID":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"身分證重複檢查",
+            "operationId":"Member_VerifyIdentifyID",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"verifyIdentifyIDRequests",
+                  "in":"body",
+                  "description":"身分證號碼",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/VerifyIdentifyIDRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/VerifyIdentifyIDResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/VerifyEmail":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"Email重複檢查",
+            "operationId":"Member_VerifyEmail",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"verifyEmailRequests",
+                  "in":"body",
+                  "description":"Email",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/VerifyEmailRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/VerifyEmailResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/VerifyUserID":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"UserID重複檢查",
+            "operationId":"Member_VerifyUserID",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"verifyUserIDRequests",
+                  "in":"body",
+                  "description":"使用者名稱",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/VerifyUserIDRequest",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/VerifyUserIDResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/RegisterMemberByEmail":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"會員註冊ByEmail",
+            "operationId":"Member_RegisterMemberByEmail",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"registerMemberByEmailRequests",
+                  "in":"body",
+                  "description":"會員註冊ByEmail資料",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/RegisterMemberByEmailRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/RegisterMemberByEmailResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/VerifyPhone":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"Phone重複檢查",
+            "operationId":"Member_VerifyPhone",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"verifyPhoneRequests",
+                  "in":"body",
+                  "description":"手機號碼",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/VerifyPhoneRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/VerifyPhoneResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/RegisterMemberByPhone":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"會員註冊ByPhone",
+            "operationId":"Member_RegisterMemberByPhone",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"registerMemberByPhoneRequests",
+                  "in":"body",
+                  "description":"會員註冊ByPhone資料",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/RegisterMemberByPhoneRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/RegisterMemberByPhoneResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/Login":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"Login",
+            "operationId":"Member_Login",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"loginRequests",
+                  "in":"body",
+                  "description":"登入資料",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/LoginRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/LoginResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/Logout":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"登出",
+            "operationId":"Member_Logout",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"logoutRequests",
+                  "in":"body",
+                  "description":"",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/LogoutRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               },
+               {
+                  "name":"AccessToken",
+                  "in":"header",
+                  "required":true,
+                  "type":"string",
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/LogoutResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/ResendAndSaveEmail":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"郵件重送以及郵件修改",
+            "operationId":"Member_ResendAndSaveEmail",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"resendAndSaveEmailRequests",
+                  "in":"body",
+                  "description":"",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/ResendAndSaveEmailRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               },
+               {
+                  "name":"AccessToken",
+                  "in":"header",
+                  "required":true,
+                  "type":"string",
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/ResendAndSaveEmailResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/GetMemberBasicData":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"取得會員基本資料",
+            "operationId":"Member_GetMemberBasicData",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"getMemberBasicDataRequests",
+                  "in":"body",
+                  "description":"",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/GetMemberBasicDataRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               },
+               {
+                  "name":"AccessToken",
+                  "in":"header",
+                  "required":true,
+                  "type":"string",
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/GetMemberBasicDataResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Member/SetMemberBasicData":{
+         "post":{
+            "tags":[
+               "Member"
+            ],
+            "summary":"設定會員基本資料",
+            "operationId":"Member_SetMemberBasicData",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"setMemberBasicDataRequests",
+                  "in":"body",
+                  "description":"",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/SetMemberBasicDataRequests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               },
+               {
+                  "name":"AccessToken",
+                  "in":"header",
+                  "required":true,
+                  "type":"string",
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/SetMemberBasicDataResponses",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Test/Test01":{
+         "post":{
+            "tags":[
+               "Test"
+            ],
+            "summary":"測試連線用，日後將刪除",
+            "operationId":"Test_Test01",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"test01Requestcs",
+                  "in":"body",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/Test01Requests",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/Test01Response",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "/api/Test/Test02":{
+         "post":{
+            "tags":[
+               "Test"
+            ],
+            "summary":"測試連線用，日後將刪除",
+            "operationId":"Test_Test02",
+            "consumes":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml",
+               "application/x-www-form-urlencoded"
+            ],
+            "produces":[
+               "application/json",
+               "text/json",
+               "application/xml",
+               "text/xml"
+            ],
+            "parameters":[
+               {
+                  "name":"test02Requestcs",
+                  "in":"body",
+                  "required":true,
+                  "schema":{
+                     "$ref":"#/definitions/Test02Request",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               },
+               {
+                  "name":"AccessToken",
+                  "in":"header",
+                  "required":true,
+                  "type":"string",
+                  "vendorExtensions":{
+
+                  }
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"OK",
+                  "schema":{
+                     "$ref":"#/definitions/Test02Response",
+                     "vendorExtensions":{
+
+                     }
+                  },
+                  "vendorExtensions":{
+
+                  }
+               }
+            },
+            "deprecated":false,
+            "vendorExtensions":{
+
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      }
+   },
+   "definitions":{
+      "GetAllCountryRequests":{
+         "description":"取得所有國家",
+         "type":"object",
+         "properties":{
+
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "GetAllCountryResponses":{
+         "description":"取得所有國家",
+         "type":"object",
+         "properties":{
+            "CountryArray":{
+               "description":"國別名稱陣列",
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/CountryType",
+                  "vendorExtensions":{
+
+                  }
+               },
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "CountryType":{
+         "description":"",
+         "type":"object",
+         "properties":{
+            "CountryID":{
+               "description":"國別代碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "CountryName":{
+               "description":"國別名稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyIdentifyIDRequests":{
+         "description":"身分證重複性檢查",
+         "required":[
+            "IdentifyID"
+         ],
+         "type":"object",
+         "properties":{
+            "IdentifyID":{
+               "description":"身分證",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyIdentifyIDResponses":{
+         "description":"身分證號碼重複性檢查",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyEmailRequests":{
+         "description":"Email重複檢查",
+         "required":[
+            "Email"
+         ],
+         "type":"object",
+         "properties":{
+            "Email":{
+               "description":"Email",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyEmailResponses":{
+         "description":"Email重複性檢查",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyUserIDRequest":{
+         "description":"使用者名稱重複性檢查",
+         "required":[
+            "UserID"
+         ],
+         "type":"object",
+         "properties":{
+            "UserID":{
+               "description":"使用者名稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyUserIDResponses":{
+         "description":"使用者名稱重複性檢查",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "RegisterMemberByEmailRequests":{
+         "description":"Email會員註冊",
+         "required":[
+            "IdentifyID",
+            "Email",
+            "UserID",
+            "LastName",
+            "FirstName",
+            "Pwd"
+         ],
+         "type":"object",
+         "properties":{
+            "IdentifyID":{
+               "description":"身分證號碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Email":{
+               "description":"郵件",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "UserID":{
+               "description":"使用者名稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "LastName":{
+               "description":"姓",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "FirstName":{
+               "description":"名",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Pwd":{
+               "description":"密碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "RegisterMemberByEmailResponses":{
+         "description":"Email會員註冊",
+         "type":"object",
+         "properties":{
+            "AccessToken":{
+               "description":"設定或取得 Access Token",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyPhoneRequests":{
+         "description":"手機號碼重複性檢查",
+         "required":[
+            "Phone"
+         ],
+         "type":"object",
+         "properties":{
+            "Phone":{
+               "description":"手機號碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "VerifyPhoneResponses":{
+         "description":"手機號碼重複性檢查",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "RegisterMemberByPhoneRequests":{
+         "description":"手機註冊會員",
+         "required":[
+            "IdentifyID",
+            "Phone",
+            "UserID",
+            "LastName",
+            "FirstName",
+            "Pwd"
+         ],
+         "type":"object",
+         "properties":{
+            "IdentifyID":{
+               "description":"身分證號碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Phone":{
+               "description":"手機號碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "UserID":{
+               "description":"使用者名稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "LastName":{
+               "description":"姓",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "FirstName":{
+               "description":"名",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Pwd":{
+               "description":"密碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "RegisterMemberByPhoneResponses":{
+         "description":"手機註冊會員",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "LoginRequests":{
+         "description":"登錄",
+         "required":[
+            "UserID",
+            "Pwd"
+         ],
+         "type":"object",
+         "properties":{
+            "UserID":{
+               "description":"使用者名稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Pwd":{
+               "description":"密碼",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "LoginResponses":{
+         "description":"登入",
+         "type":"object",
+         "properties":{
+            "Ret":{
+               "description":"",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "AccessToken":{
+               "description":"設定或取得 Access Token",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "LogoutRequests":{
+         "description":"Logout",
+         "type":"object",
+         "properties":{
+
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "LogoutResponses":{
+         "description":"Logout",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "ResendAndSaveEmailRequests":{
+         "description":"郵件重送以及郵件修改",
+         "required":[
+            "Email"
+         ],
+         "type":"object",
+         "properties":{
+            "Email":{
+               "description":"Email",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "ResendAndSaveEmailResponses":{
+         "description":"郵件重送以及郵件修改",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "GetMemberBasicDataRequests":{
+         "type":"object",
+         "properties":{
+
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "GetMemberBasicDataResponses":{
+         "description":"",
+         "type":"object",
+         "properties":{
+            "SysID":{
+               "description":"會員系統 ID",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "UserID":{
+               "description":"會員代碼 格式  12 limitation 12 char",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "FirstName":{
+               "description":"名字",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "LastName":{
+               "description":"姓名",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "NickName":{
+               "description":"暱稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "IdentifyID":{
+               "description":"身份證",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Mail":{
+               "description":"郵件",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "PHONE":{
+               "description":"手機",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Birthday":{
+               "format":"date-time",
+               "description":"出生日期",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Language":{
+               "description":"語言",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Gender":{
+               "format":"int32",
+               "description":"姓別",
+               "type":"integer",
+               "vendorExtensions":{
+
+               }
+            },
+            "Country":{
+               "description":"國家",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "State":{
+               "description":"省區",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "City":{
+               "description":"城市",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Address":{
+               "description":"地址",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "OfficeTel":{
+               "description":"辦公室電話",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Fax":{
+               "description":"傳真",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "RecommendID":{
+               "description":"推薦人_ID",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "ResettlementID":{
+               "description":"安置人_ID",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "SetMemberBasicDataRequests":{
+         "description":"設定會員基本資料",
+         "type":"object",
+         "properties":{
+            "FirstName":{
+               "description":"名字",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "LastName":{
+               "description":"姓名",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "NickName":{
+               "description":"暱稱",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Birthday":{
+               "format":"date-time",
+               "description":"出生日期",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Language":{
+               "description":"語言",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Gender":{
+               "format":"int32",
+               "description":"姓別",
+               "type":"integer",
+               "vendorExtensions":{
+
+               }
+            },
+            "Country":{
+               "description":"國家",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "State":{
+               "description":"省區",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "City":{
+               "description":"城市",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Address":{
+               "description":"地址",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "OfficeTel":{
+               "description":"辦公室電話",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "Fax":{
+               "description":"傳真",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "RecommendID":{
+               "description":"推薦人_ID",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "ResettlementID":{
+               "description":"安置人_ID",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "SetMemberBasicDataResponses":{
+         "description":"設定會員基本資料",
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "Test01Requests":{
+         "type":"object",
+         "properties":{
+            "AccountName":{
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "Test01Response":{
+         "type":"object",
+         "properties":{
+            "AccessTokenTest":{
+               "description":"設定或取得 Access Token (測試用)",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "Test02Request":{
+         "required":[
+            "RequiredField"
+         ],
+         "type":"object",
+         "properties":{
+            "RequiredField":{
+               "description":"取得或設定必要欄位",
+               "type":"string",
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      },
+      "Test02Response":{
+         "type":"object",
+         "properties":{
+            "ResultCode":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            },
+            "ResultMessage":{
+               "type":"string",
+               "readOnly":true,
+               "vendorExtensions":{
+
+               }
+            }
+         },
+         "vendorExtensions":{
+
+         }
+      }
+   },
+   "vendorExtensions":{
+
+   }
+}
