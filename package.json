@@ -6,6 +6,19 @@
     "url": "git@github.com:WJWang/swagger2js-generator.git",
     "type": "git"
   },
+  "scripts": {
+    "start": "babel-node --presets es2015,stage-0 ./index.js"
+  },
+  "devDependencies": {
+     "babel-cli": "^6.10.1",
+     "babel-core": "^6.10.4",
+     "babel-eslint": "^6.0.4",
+     "babel-plugin-syntax-async-functions": "^6.8.0",
+     "babel-plugin-transform-regenerator": "^6.9.0",
+     "babel-polyfill": "^6.9.1",
+     "babel-preset-es2015": "^6.9.0",
+     "babel-preset-stage-0": "^6.5.0"
+  },
   "author": "William Wang <shadow25251@gmail.com>",
   "license": "MIT"
 }
