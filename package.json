@@ -1,0 +1,11 @@
+{
+  "name": "swagger2js-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:WJWang/swagger2js-generator.git",
+    "type": "git"
+  },
+  "author": "William Wang <shadow25251@gmail.com>",
+  "license": "MIT"
+}
