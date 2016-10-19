@@ -1,6 +1,3 @@
-const test = async () => {
-  const a = await new Promise((resolve) => resolve(123))
-  console.log(a);
+const compiler = async (input) => {
+  return (lexer) => (parser) => (transformer) => (generator) => generator(transformer(parser(lexer(input))));
 };
-
-test();
